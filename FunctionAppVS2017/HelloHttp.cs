@@ -8,9 +8,9 @@ using Microsoft.Azure.WebJobs.Host;
 
 namespace FunctionAppVS2017
 {
-    public static class HelloHtto
+    public static class HelloHttp
     {
-        [FunctionName("HelloHtto")]
+        [FunctionName("HelloHttp")]
         public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]HttpRequestMessage req, TraceWriter log)
         {
             log.Info("C# HTTP trigger function processed a request.");
