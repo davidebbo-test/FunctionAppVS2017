@@ -1,0 +1,11 @@
+﻿{
+  "$schema": "http://json.schemastore.org/proxies",
+  "proxies": {
+    "test": {
+      "matchCondition": {
+        "route": "msn"
+      },
+      "backendUri": "http://msn.com"
+    }
+  }
+}
