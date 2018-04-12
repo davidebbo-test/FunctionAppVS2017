@@ -18,6 +18,7 @@ namespace FunctionAppVS2017
             ExecutionContext context)
         {
             log.Info("C# HTTP trigger function processed a request.");
+            log.Info($"From class library: {MyClassLibrary.Hello.SayHello("David")}");
 
             // parse query parameter
             string name = req.GetQueryNameValuePairs()
